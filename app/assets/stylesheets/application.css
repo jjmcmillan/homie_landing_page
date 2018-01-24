@@ -20,10 +20,37 @@ h1, h2, h3 {
 }
 
 .navbar {
-  font-family:Ubuntu;
-  font-size:1.2em;
-  z-index:1000;
-  background-color:white;
-  width:100%;
-  padding:10px;
+  font-family: Ubuntu;
+  font-size: 1.2em;
+  font-weight:700;
+}
+
+.pageOne {
+  background:url(https://images.unsplash.com/20/cambridge.JPG?auto=format&fit=crop&w=1030&q=80);
+  background-size:cover;
+  background-position:0px -100px;
+  height: 800px;
+  overflow:auto;
+}
+
+.title {
+  margin-top: 35%;
+  width:80%;
+  color: white;
+}
+
+.pageTwo {
+  background-color: white;
+  height: 400px;
+  overflow:auto;
+}
+
+.block {
+  opacity:.8;
+  padding:20px;
+  width:30%;
+  margin-right:auto;
+  margin-left:auto;
+  border-radius:20px;
+  margin-top:38%;
 }
