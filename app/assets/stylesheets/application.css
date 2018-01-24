@@ -15,6 +15,10 @@
  *= require font-awesome
  */
 
+body, html {
+    height: 100%;
+}
+
 h1, h2, h3 {
     font-family: 'Ubuntu', sans-serif; font-weight:700;
 }
@@ -28,9 +32,10 @@ h1, h2, h3 {
 .pageOne {
   background:url(https://images.unsplash.com/20/cambridge.JPG?auto=format&fit=crop&w=1030&q=80);
   background-size:cover;
-  background-position:0px -100px;
-  height: 800px;
   overflow:auto;
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .title {
@@ -53,4 +58,22 @@ h1, h2, h3 {
   margin-left:auto;
   border-radius:20px;
   margin-top:38%;
+}
+
+.benefit {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  flex-wrap:wrap;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:400px;
+}
+
+.feature {
+  padding: 60px;
 }
