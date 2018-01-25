@@ -15,65 +15,54 @@
  *= require font-awesome
  */
 
-body, html {
-    height: 100%;
-}
 
 h1, h2, h3 {
     font-family: 'Ubuntu', sans-serif; font-weight:700;
 }
 
+.right {
+  background-color: #41D7F5;
+  height:100%;
+  position:absolute; top:0; bottom:0; right:0; left:50%;
+}
+
 .navbar {
-  font-family: Ubuntu;
-  font-size: 1.2em;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.navbar-brand {
   font-weight:700;
 }
 
-.pageOne {
-  background:url(https://images.unsplash.com/20/cambridge.JPG?auto=format&fit=crop&w=1030&q=80);
-  background-size:cover;
-  overflow:auto;
-  height: 100%; 
-  background-position: center;
-  background-repeat: no-repeat;
+.login {
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
-.title {
-  margin-top: 35%;
-  width:80%;
-  color: white;
+.email {
+  background-color: #D9D8D8;
+  padding:15px;
+  width:300px;
+  margin-top: 20px;
+  border-radius: 10px;
 }
 
-.pageTwo {
-  background-color: white;
-  height: 400px;
-  overflow:auto;
+.input-email {
+  background-color: #D9D8D8;
 }
 
-.block {
-  opacity:.8;
-  padding:20px;
-  width:30%;
-  margin-right:auto;
-  margin-left:auto;
-  border-radius:20px;
-  margin-top:38%;
+.form-control::-webkit-input-placeholder { 
+  color: black; 
 }
 
-.benefit {
-  height: 400px;
-  display: flex;
-  align-items: center;
-  flex-wrap:wrap;
+.email-button {
+  margin-left:auto; 
+  margin-right:0;
 }
 
-.about {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height:400px;
-}
-
-.feature {
-  padding: 60px;
+@media (max-width: 500px) {
+  .right {
+    display: none;
+  }
 }
