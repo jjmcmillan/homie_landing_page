@@ -20,10 +20,9 @@ h1, h2, h3 {
     font-family: 'Ubuntu', sans-serif; font-weight:700;
 }
 
-.right {
-  background-color: #41D7F5;
-  height:100%;
-  position:absolute; top:0; bottom:0; right:0; left:50%;
+h6 {
+  font-family: 'Ubuntu', sans-serif; font-weight:400;
+  font-size: 1.2em;
 }
 
 .navbar {
@@ -33,6 +32,10 @@ h1, h2, h3 {
 
 .navbar-brand {
   font-weight:700;
+}
+
+.headline {
+  margin-top: 20vh;
 }
 
 .login {
@@ -48,10 +51,6 @@ h1, h2, h3 {
   border-radius: 10px;
 }
 
-.input-email {
-  background-color: #D9D8D8;
-}
-
 .form-control::-webkit-input-placeholder { 
   color: black; 
 }
@@ -61,8 +60,43 @@ h1, h2, h3 {
   margin-right:0;
 }
 
+.arrow {
+  color: blue;
+}
+
+.right {
+  background-color: #41D7F5;
+  height:100vh;
+}
+
+.row-height {
+  height:33vh;
+}
+
+/*
+ .row-height {
+  height:33vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+*/
+
+.icons {
+  margin-top: 40px;
+}
+
 @media (max-width: 500px) {
   .right {
     display: none;
+  }
+  .headline {
+    margin-top: 50px;
+  }
+  .container-fluid {
+    padding:0px;
+  }
+  .email-button {
+    width:100%;
   }
 }
