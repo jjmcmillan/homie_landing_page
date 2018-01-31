@@ -1,6 +1,7 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-6">
+      <%= flash[:notice] %>
       
       <nav class="navbar navbar-light bg-white">
         <a class="navbar-brand" href="/">
@@ -12,12 +13,13 @@
       <div class="login">
         <h2 class="headline">Your University's group chat community</h2>
         <h6 style="margin-top:30px">Unify allows you to easily find, join, and discover all the essential university group chats relevant to you.</h6>
-        <form class="form-inline email">
-          <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0 input-email" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Email">
-          <button type="submit" class="btn btn-primary email-button">Join</button>
-        </form>
+        <%= form_for @subscriber do |f| %>
+          <div class="form-inline email">
+            <%= f.text_field :email, class: 'form-control mb-2 mr-sm-2 mb-sm-0', autocomplete: false, autocorrect: false, autocapitalize: false, spellcheck: false, placeholder: "Email" %>
+            <%= f.submit 'Join', class: 'btn btn-primary email-button' %>
+          </div>
+        <% end %>
         <i style="margin-top:30px" class="fa fa-arrow-up fa-2x arrow" aria-hidden="true"></i>
-        
       </div>
 
     </div>
@@ -25,29 +27,29 @@
      <div class="col-md-6 text-center right">
       <div class="row">
         <div class="col-md-12 row-height">
-          <span class="fa-stack fa-3x icons">
+          <span class="fa-stack fa-2x icons">
             <i class="fa fa-circle-thin fa-stack-2x"></i>
             <i class="fa fa-graduation-cap fa-stack-1x"></i>
           </span>
-          <h6 style="padding:30px;">An exclusive community of students.</h6>
+          <h6 class="benefit">An exclusive community of students.</h6>
         </div>
       </div>
       <div class="row">
         <div class="col-md-12 row-height">
-          <span class="fa-stack fa-3x icons">
+          <span class="fa-stack fa-2x icons">
             <i class="fa fa-circle-thin fa-stack-2x"></i>
             <i class="fa fa-users fa-stack-1x"></i>
           </span>
-          <h6 style="padding:30px;">Instantly find and join the university group chats you want to be a part of.</h6>
+          <h6 class="benefit">Instantly find and join the university group chats you want to be a part of.</h6>
         </div>
       </div>
       <div class="row">
         <div class="col-md-12 row-height">
-          <span class="fa-stack fa-3x icons">
+          <span class="fa-stack fa-2x icons">
             <i class="fa fa-circle-thin fa-stack-2x"></i>
             <i class="fa fa-comments fa-stack-1x"></i>
           </span>
-          <h6 style="padding:30px;">Ask your classmates questions, get support, exchange useful resources.</h6>
+          <h6 class="benefit">Ask your classmates questions, get support, exchange useful resources.</h6>
         </div>
       </div>
     </div>
@@ -72,3 +74,8 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>
+    
+    <form class="form-inline email">
+          <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0 input-email" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Email">
+          <button type="submit" class="btn btn-primary email-button">Join</button>
+        </form>

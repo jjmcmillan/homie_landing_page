@@ -22,7 +22,7 @@ h1, h2, h3 {
 
 h6 {
   font-family: 'Ubuntu', sans-serif; font-weight:400;
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
 .navbar {
@@ -73,14 +73,11 @@ h6 {
   height:33vh;
 }
 
-/*
- .row-height {
-  height:33vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.benefit {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top:20px;
 }
-*/
 
 .icons {
   margin-top: 40px;
