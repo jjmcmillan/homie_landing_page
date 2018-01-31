@@ -1,7 +1,6 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-6">
-      <%= flash[:notice] %>
       
       <nav class="navbar navbar-light bg-white">
         <a class="navbar-brand" href="/">
@@ -19,6 +18,11 @@
             <%= f.submit 'Join', class: 'btn btn-primary email-button' %>
           </div>
         <% end %>
+        <div style="margin-top:30px">
+          <% flash.each do |type, msg| %>
+            <%= content_tag :div, msg, class: "alert alert-#{type}" %>
+          <% end %>
+        </div>
         <i style="margin-top:30px" class="fa fa-arrow-up fa-2x arrow" aria-hidden="true"></i>
       </div>
 
@@ -56,26 +60,3 @@
     
   </div>
 </div>
-
-<!-- 
-    
-    
-    
-    <div class="col-md-2 right1">
-      <i class="fa fa-graduation-cap fa-3x icons" aria-hidden="true"></i>
-      <br>
-      <i class="fa fa-users fa-3x icons" aria-hidden="true"></i>
-      <br>
-      <i class="fa fa-comments fa-3x icons" aria-hidden="true"></i>
-    </div>
-    
-    <div class="col-md-4 right2">
-      <p style="margin-top: 60px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-    
-    <form class="form-inline email">
-          <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0 input-email" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Email">
-          <button type="submit" class="btn btn-primary email-button">Join</button>
-        </form>
