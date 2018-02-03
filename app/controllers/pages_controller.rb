@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
-  def home
+  def subscribers
   end
   
-  def subscribers
+  def subscribed
   end
 end

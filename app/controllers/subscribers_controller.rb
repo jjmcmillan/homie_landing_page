@@ -6,7 +6,7 @@ class SubscribersController < ApplicationController
   def create
     @subscriber = Subscriber.new(subscriber_params)
     if @subscriber.save
-      redirect_to new_subscriber_path
+      redirect_to subscribed_path
     else
       flash[:danger] = "Please input your email"
       redirect_to new_subscriber_path

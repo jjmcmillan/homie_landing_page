@@ -14,18 +14,17 @@
         <h6 style="margin-top:30px">Unify allows you to easily find, join, and discover all the essential university group chats relevant to you.</h6>
         <%= form_for @subscriber do |f| %>
           <div class="form-inline email">
-            <%= f.text_field :email, class: 'form-control mb-2 mr-sm-2 mb-sm-0', autocomplete: false, autocorrect: false, autocapitalize: false, spellcheck: false, placeholder: "Email" %>
+            <%= f.text_field :email, class: 'form-control mb-2 mr-sm-2 mb-sm-0', autocomplete: false, autocorrect: false, autocapitalize: false, spellcheck: false, placeholder: "University Email" %>
             <%= f.submit 'Join', class: 'btn btn-primary email-button' %>
           </div>
         <% end %>
-        <div style="margin-top:30px">
+        <div style="margin-top:10px">
           <% flash.each do |type, msg| %>
             <%= content_tag :div, msg, class: "alert alert-#{type}" %>
           <% end %>
         </div>
         <i style="margin-top:30px" class="fa fa-arrow-up fa-2x arrow" aria-hidden="true"></i>
       </div>
-
     </div>
     
      <div class="col-md-6 text-center right">
@@ -33,9 +32,9 @@
         <div class="col-md-12 row-height">
           <span class="fa-stack fa-2x icons">
             <i class="fa fa-circle-thin fa-stack-2x"></i>
-            <i class="fa fa-graduation-cap fa-stack-1x"></i>
+            <i class="fa fa-facebook-square fa-stack-1x"></i>
           </span>
-          <h6 class="benefit">An exclusive community of students.</h6>
+          <h6 class="benefit">Connect to your Facebook Messenger account.</h6>
         </div>
       </div>
       <div class="row">
