@@ -45,7 +45,5 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 ruby '2.3.0'
 
-gem "font-awesome-rails"
-
 # Use Hirb gem for better console data presentation
 gem 'hirb', '0.7.3'

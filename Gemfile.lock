@@ -53,9 +53,7 @@ GEM
     crass (1.0.3)
     erubis (2.7.0)
     execjs (2.7.0)
-    ffi (1.9.18)
-    font-awesome-rails (4.7.0.3)
-      railties (>= 3.2, < 5.2)
+    ffi (1.9.21)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
     hirb (0.7.3)
@@ -145,7 +143,7 @@ GEM
     turbolinks (5.0.0)
       turbolinks-source (~> 5)
     turbolinks-source (5.1.0)
-    tzinfo (1.2.4)
+    tzinfo (1.2.5)
       thread_safe (~> 0.1)
     uglifier (3.0.0)
       execjs (>= 0.3.0, < 3)
@@ -164,7 +162,6 @@ PLATFORMS
 DEPENDENCIES
   byebug
   coffee-rails (= 4.2.1)
-  font-awesome-rails
   hirb (= 0.7.3)
   jbuilder (= 2.5.0)
   jquery-rails (= 4.1.1)
