@@ -55,7 +55,7 @@ h6 {
 }
 
 .arrow {
-  color: blue;
+  color: #007bff;
 }
 
 .right {
@@ -68,8 +68,8 @@ h6 {
 }
 
 .benefit {
-  padding-left: 70px;
-  padding-right: 70px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 .icons {
