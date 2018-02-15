@@ -54,8 +54,9 @@ h6 {
   margin-right:0;
 }
 
-.arrow {
-  color: #007bff;
+.social {
+  position: absolute;
+  bottom: 30px;
 }
 
 .right {
