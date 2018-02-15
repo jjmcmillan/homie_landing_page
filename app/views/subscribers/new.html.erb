@@ -14,7 +14,7 @@
         <h6 style="margin-top:30px">Unify allows you to easily find, join, and discover all the essential university group chats relevant to you.</h6>
         <%= form_for @subscriber do |f| %>
           <div class="form-inline email">
-            <%= f.text_field :email, class: 'form-control mb-2 mr-sm-2 mb-sm-0', autocomplete: false, autocorrect: false, autocapitalize: false, spellcheck: false, placeholder: "University Email" %>
+            <%= f.text_field :email, class: 'form-control mb-2 mr-sm-2 mb-sm-0', autocomplete: false, autocorrect: false, autocapitalize: false, spellcheck: false, placeholder: "Email" %>
             <%= f.submit 'Join', class: 'btn btn-primary email-button' %>
           </div>
         <% end %>
