@@ -54,11 +54,6 @@ h6 {
   margin-right:0;
 }
 
-.social {
-  position: absolute;
-  bottom: 30px;
-}
-
 .right {
   background-color: #41D7F5;
   height:100vh;
@@ -81,7 +76,17 @@ h6 {
   margin-top: 25vh;
 }
 
+@media (min-width: 500px) {
+  .social {
+  position: absolute;
+  bottom: 4%;
+  }
+}
+
 @media (max-width: 500px) {
+  .social {
+  margin-top: 30px;
+  }
   .right {
     display: none;
   }
